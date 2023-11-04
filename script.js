@@ -89,7 +89,7 @@ let arr = [
   },
   {
     name: "Paneer Tikka",
-    imageSrc: "https://source.unsplash.com/random?paneerTikka",
+    imageSrc: "https://source.unsplash.com/random?food-panneer-tikka",
     time: "40 min",
     type: "veg",
     isLiked: false,
@@ -105,7 +105,7 @@ let arr = [
   },
   {
     name: "Fish Tacos",
-    imageSrc: "https://source.unsplash.com/random?fishTacos",
+    imageSrc: "https://source.unsplash.com/random?food-FishTacos",
     time: "35 min",
     type: "non-veg",
     isLiked: false,
