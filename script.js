@@ -122,9 +122,9 @@ let arr = [
 ];
 
 function toggleMenu() {
-  var sideNav = document.getElementById("sideNav");
-  var menuBtn = document.getElementById("menuBtn");
-  var closeBtn = document.getElementById("close");
+  const sideNav = document.getElementById("sideNav");
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("close");
 
   if (sideNav.style.width === "50%") {
     sideNav.style.width = "0";
@@ -138,10 +138,10 @@ function toggleMenu() {
 }
 
 function addRecipes() {
-  var container = document.getElementById("parent");
+  const container = document.getElementById("parent");
 
   arr.forEach(function (recipe, index) {
-    var recipeDiv = document.createElement("div");
+    const recipeDiv = document.createElement("div");
 
     recipeDiv.classList.add("card");
 
@@ -180,26 +180,26 @@ function addRecipes() {
   document.getElementById("below4").addEventListener("change", filterRecipes);
 }
 function filterRecipes() {
-  var searchTerm = document.getElementById("search").value.toLowerCase();
+  const searchTerm = document.getElementById("search").value.toLowerCase();
 
-  var above4Checkbox = document.getElementById("above4");
-  var below4Checkbox = document.getElementById("below4");
+  const above4Checkbox = document.getElementById("above4");
+  const below4Checkbox = document.getElementById("below4");
 
-  var recipeCards = document.querySelectorAll(".card");
+  const recipeCards = document.querySelectorAll(".card");
 
   recipeCards.forEach(function (recipeCard) {
-    var recipeName = recipeCard
+    const recipeName = recipeCard
       .querySelector(".food-name h1")
       .textContent.toLowerCase();
-    var recipeRating = parseFloat(
+    const recipeRating = parseFloat(
       recipeCard.querySelector(".star-rate label").textContent
     );
 
-    var nameMatches = recipeName.includes(searchTerm);
+    const nameMatches = recipeName.includes(searchTerm);
 
-    var above4Matches =
+    const above4Matches =
       !above4Checkbox.checked || (above4Checkbox.checked && recipeRating >= 4);
-    var below4Matches =
+    const below4Matches =
       !below4Checkbox.checked || (below4Checkbox.checked && recipeRating < 4);
 
     if (
@@ -214,10 +214,10 @@ function filterRecipes() {
 }
 
 function filterByType(type) {
-  var recipeCards = document.querySelectorAll(".card");
+  const recipeCards = document.querySelectorAll(".card");
 
   recipeCards.forEach(function (recipeCard) {
-    var recipeType = recipeCard
+    const recipeType = recipeCard
       .querySelector(".type")
       .textContent.toLowerCase();
 
@@ -233,7 +233,7 @@ function filterByType(type) {
 }
 
 function toggleLike(index) {
-  var likeImage = document.getElementById(`likeImage_${index}`);
+  const likeImage = document.getElementById(`likeImage_${index}`);
 
   arr[index].isLiked = !arr[index].isLiked;
 
