@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cookal</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="img-sec">
+                <div class="first-img">
+                    <label for="click" class="menu-btn">
+                        <button id="menuBtn" onclick="toggleMenu()">☰</button>
+                    </label>
+                    <div id="sideNav" class="sidenav">
+                        <div class="component">
+                            <div class="row">
+                                <img src="./images/Cookpal 1.png" alt="no-image">
+                                <div class="col-1">
+                                    <img src="./images/profile.svg" alt="no-image">
+                                    <button id="close" onclick="toggleMenu()">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="links">
+                            <ul style="display: flex; flex-direction: column;">
+                                <li><a class="green" href="#">Home</a></li>
+                                <li><a href="#content">Explore</a></li>
+                                <li><a href="#email">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-img">
+                    <img src="./images/Cookpal 1.png" alt="no-image">
+                </div>
+            </div>
+            <div class="links-sec headlink">
+                <div class="links">
+                    <ul>
+                        <li><a class="green" href="#">Home</a></li>
+                        <li><a href="#content">Explore</a></li>
+                        <li><a href="#email">Help</a></li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <img src="./images/profile.svg" alt="no-image">
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <div class="main">
+
+        <section class="hero-image">
+            <div class="hero">
+                <div class="hero-content">
+                    <p>Trending now</p>
+                    <h2>Mikes Famous Salad with cheese</h2>
+                    <p>By John Mike</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="content">
+            <div class="search-container" id="search-container">
+                <div class="heading">
+                    <h4>Search For Recipes</h4>
+                </div>
+                <div class="search">
+                    <div class="search-div">
+                        <img src="./images/search 1.png" alt="no-image">
+                        <input id="search" placeholder="Search for recipes..." type="text">
+                    </div>
+                    <button id="search-btn"><img src="./images/li_search.svg" alt="no-image"></button>
+                </div>
+
+            </div>
+
+            <div class="filter-cards">
+                <button onclick="filterByType('all')" class="first">All Recipes <img src="./images/chevron.svg"
+                        alt="no-image"> </button>
+                <button onclick="filterByType('veg')" class="second">Veg Recipes Only <img src="./images/chevron.svg"
+                        alt="no-image"> </button>
+                <button onclick="filterByType('non-veg')" class="third">Non Veg Recipes <img src="./images/chevron.svg"
+                        alt="no-image"> </button>
+            </div>
+
+            <div class="content-part">
+                <div class="left">
+                    <h4>Filters</h4>
+
+                    <div class="rating">
+                        <div class="div">
+                            <input type="checkbox" name="below" id="above4">
+                            <label for="above4">4 and Above</label>
+                        </div>
+                        <div class="div">
+                            <input type="checkbox" name="above" id="below4">
+                            <label for="below4">Below 4</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="parent" class="right"></div>
+            </div>
+        </section>
+
+        <section class="footer">
+
+            <footer>
+                <div class="col">
+                    <img src="./images/Cookpal 1.png" alt="no-image">
+                    <div class="text">
+                        Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search
+                        function.
+                        Join our community
+                        and let's cook together!
+                    </div>
+                </div>
+                <div class="col col-mid">
+                    <h5>Company</h5>
+                    <h6><a href="#">Home</a></h6>
+                    <h6><a href="#email">Explore</a></h6>
+                    <h6><a href="#">Team</a></h6>
+                    <h6><a href="#">About us</a></h6>
+                    <h6><a href="#">Activity</a></h6>
+                </div>
+                <div class="col col-mid">
+                    <h5>Resources</h5>
+                    <h6><a href="#">Blog</a></h6>
+                    <h6><a href="#">Use Cases</a></h6>
+                    <h6><a href="#">Testimonials</a></h6>
+                    <h6><a href="#">Insights</a></h6>
+                </div>
+                <div class="col">
+                    <img src="./images/Cookpal 1.png" alt="no-image">
+                    <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+
+                    <div class="foot-search">
+                        <div class="input">
+                            <input type="email" name="email" id="email">
+                            <span class="material-symbols-outlined">
+                                alternate_email
+                            </span>
+                        </div>
+                        <button class="subscribe-btn"><a href="mailto: cuberubiks17@gmail.com" for="email" type="submit"
+                                class="subscribe-btn">Subscribe</a></button>
+                    </div>
+                </div>
+            </footer>
+            <div class="foot-row2">
+                <img style="padding: 5px; background: url(/images/Circle.svg)center center/cover no-repeat;"
+                    src="./images/instagram icon.svg" alt="no-image">
+                <img style="padding: 5px; background: url(/images/Circle.svg)center center/cover no-repeat;"
+                    src="./images/Twitter.svg" alt="no-image">
+                <img style="padding: 5px; background: url(/images/Circle.svg)center center/cover no-repeat;"
+                    src="./images/linkedin icon.svg" alt="no-image">
+                <img style="padding: 5px; background: url(/images/Circle.svg)center center/cover no-repeat;"
+                    src="./images/facebook icon.svg" alt="no-image">
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
